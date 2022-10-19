@@ -8,7 +8,7 @@ import userRoutes from './routes/users.js';
 
 const app = express();
 dotenv.config();
-
+// console.log(process.env)
 app.use(bodyParser.json({ limit: "32mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "32mb", extended: true }));
 app.use(cors());
